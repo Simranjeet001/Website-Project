@@ -1,0 +1,1153 @@
+/*Body selector*/
+body{
+    margin: 0; /*Margin is the space between two elements.*/
+    padding: 0; /*Padding is the space between an element's content and its borders*/
+    box-sizing: border-box; /*It will include the border, padding, and margin in total height/width of an element.*/
+    font-family: 'Poppins', sans-serif;/*font style for whole website */
+}
+
+
+
+
+
+
+/*------------------Styling header starts-----------------------------*/
+
+/*Styling logo*/
+.logoimg{
+    float: left; /*It will keep the picture on the left side*/
+    width: 130px; /*header occupies full width of user's screen*/
+    height: 45px;
+    margin-top: 10px;
+}
+
+/*Styling navigation bar*/
+.menu{
+    position: fixed; /*Its position gets fixed */
+    top: 0;  /*It gets fixed at the top of the page*/
+    width: 100%; 
+    z-index: 1; /*header stays in the upper layer as compared to other elements*/
+    background: #184d47;
+    text-align: center; /*To align the text*/
+}
+
+.menu-ul{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.menu-ul li{
+    font-size: 17px; /*size of font will be 17px*/
+    list-style: none; /*It removes the bullets in front of list items*/
+    display: inline-block; /*It will add some space above and below the navigation link*/
+    padding: 25px 25px 26px 25px;
+    transition: all 0.4s; /*To make the change in css properties smooth for a specified duration.*/
+}
+
+.a-menu{
+    text-decoration: none; /*to remove underline*/
+    color:white;
+}
+
+.menu-ul li:hover{
+    background: #5b8c5a;
+    transform:scale(1.1);/*It will zoom the element 1.1 times when hovered The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.*/
+}
+
+
+/*Styling search box*/
+.search-box{
+    border:10px solid white;/*to set the border of the element*/
+    border-radius: 15px;
+    background: white;
+    width: 80px;
+    display: inline;/*This property is used to display an element as an inline element (like <span>). The height and width properties are not effected on display:inline; property. It allows only left and right side of margins, not top and bottom.*/
+    margin: 8px;
+    margin-left: 100px;/*The margin-left CSS property sets the margin area on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.*/
+}
+
+.search-box form{
+    display:inline-block;/*This property is used to display an element as an inline-level block container. The element itself is formatted as an inline element, but it can apply height and width values. It is placed as an inline element (on the same line as adjacent content).*/
+}
+#search-input{
+    width: 120px;
+    border: none;
+    font-size: 16px;
+    outline: none;/*The outline property in CSS draws a line around the outside of an element. It's similar to border except that: It always goes around all the sides, you can't specify particular sides. It's not a part of the box model, so it won't affect the position of the element or adjacent elements*/
+    background: transparent;/*If you just want your element to be transparent*/
+}
+.search-input1{
+    width: 35px;
+    border: none;/*We can specify the no border property using CSS border: none, border-width : 0, border : 0 properties. */
+    font-size: 16px;
+    background: transparent;
+}
+
+/*Styling cart icon*/
+.icon{
+    margin-right: 15px;/*The margin-right CSS property sets the margin area on the right side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.*/
+}
+
+/*--------------------Styling header ends----------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------Homepage styling starts-------------------*/
+
+/*Styling cover picture and content on it*/
+.parallax{
+    background-image: url(../pictures/img.jpg);
+    /*Source: https://www.freepik.com/free-photo/cheerful-shopping-woman-with-bags_3272392.htm*/
+    background-position: center;
+    background-repeat: no-repeat;/*There will not be any repetition of background picture*/
+    background-size: cover;/*Backgroundsize cover will scale the image as large as it can be.*/
+    height: 120vh;
+    width: 100vw;
+    margin-top: 75px;
+}
+
+
+
+/*Styling the content on the cover picture*/
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+
+.content p{
+    font-size: 20px;
+    color: #6a7199;
+}
+
+.content{
+    margin-left: 10%;
+    margin-top:10%;
+    float: right;
+    margin-right: 30px;
+}
+
+
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);/*The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color*/
+}
+.back:hover{
+    background: linear-gradient(45deg, #87adfe, #ff77cd);/*The linear-gradient() function sets a linear gradient as the background image. To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.    */
+    border-radius: 20px;
+}
+
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+}
+
+/*Styling featured product div*/
+.head-1{
+    width: 100%;
+    border-bottom: 0.2rem solid rgba(0,0,0,0.3);/*Border-bottom sets the values of all of the properties that it can set, even if they are not specified....It is generally safest to use the same unit for different dimensions, and this applies to border-radius , too, when the height and width of the element have been set in rem units.*/
+    font-size: 2rem;/*Use em only for sizing that needs to scale based on the font size of an element other than the html (root) element. Use rem unit for elements that scale depending on a user's browser font size settings. Use rem as the unit for most of your property value. For complex layout arrangement, use percentage (%).*/
+    padding:1rem 6rem;/*As element padding values and margins are expressed using rem, the entire component scales with the device size.*/
+    color:#fff;
+    background:rgb(105, 105, 199);
+    border-top-right-radius: 3rem;
+    display: inline-block;
+}
+
+
+h4{
+    color: #555;
+}
+
+.rating{
+    color: #ff523b;
+}
+
+
+.col-4{
+    display: inline-block;
+    transition: transform 0.5s;/*CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.*/
+    margin: 10px;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);/*The translate() CSS function repositions an element in the horizontal and/or vertical directions. Its result is a <transform-function> data type. This transformation is characterized by a two-dimensional vector. Its coordinates define how much the element moves in each direction.*/
+}
+.col-4 img{
+    width: 17vw;
+    height: 40vh;
+
+}
+
+/*Styling deals div*/
+.deal{
+    min-height: 100vh;/*The min-height CSS property sets the minimum height of an element. It prevents the used value of the height property from becoming smaller than the value specified for min-height .*/
+}
+
+.deal .box-container-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;/*The content will wrap itself in the new line when screen size is decreased*/
+}
+
+.deal .box-container-a .box-b{
+    flex:1 1 40rem;/*It is a shorthand for flex-grow, flex-shrink, and flex-basis.*/
+    height: 25rem;/*It provides a way to specify lengths as fractions of the root element's font size.*/
+    margin:2rem;
+    border-radius: 1rem;/*Border radius tokens are used to give sharp edges a more subtle, rounded effect.*/
+    overflow: hidden;/*overflow:hidden prevents scrollbars from showing up, even when they're necessary.*/
+    position: relative;/*An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.*/
+    box-shadow: 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+
+.deal .box-container-a .box-b img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;/*The replaced content is sized to maintain its aspect ratio while filling the element’s entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.*/
+}
+
+.deal .box-container-a .box-b .content-1{
+    position: absolute;/*An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.*/
+    top:55%;/*The top CSS property participates in specifying the vertical position of a positioned element. It has no effect on non-positioned elements.*/ 
+    left: 3rem;/*The left property in CSS is used to specify the horizontal position of a positioned element. It has no effect on non-positioned elements. Note: If position property is absolute or fixed, the left property specifies the distance between the element left edge and the left edge of its containing block.*/
+    transform:translateY(-50%);
+}
+
+.deal .box-container-a .box-b .content-1 h3{
+    font-size: 3.5rem;
+    color:#fff;
+    text-shadow: 0.2rem 0.4rem rgba(0,0,0,.3);/*The text-shadow property adds shadow to text.*/
+}
+
+.deal .box-container-a .box-b .content-1 p{
+    font-size: 2rem;
+    color:black;
+}
+
+.deal .box-container-a .box-b .content-1 .btn-a.button-active{
+    margin:1.4rem 0;
+}
+
+.icons-container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.icons-1{
+    flex:1 1 25rem;
+    padding:1rem;
+    margin:1rem;
+    text-align: center;
+    border:.4rem solid rgb(101, 101, 209);
+    background-color:ghostwhite;
+    border-radius:3px ;
+}
+
+.icons-1 i{
+    color:rgb(75, 75, 189);
+    font-size: 6rem;
+    padding:1rem 0;
+}
+
+.txt{
+    color:#333;
+    font-size: 2.3rem;
+    text-transform: capitalize;/*The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.*/
+}
+
+.para{
+    color:#666;
+    font-size: 1.6rem;
+    padding:1rem 0;
+}
+
+
+
+/*Styling offer div*/
+
+.small-container-2{
+    justify-content: space-between;/*The justify-content property is a sub-property of the Flexible Box Layout module. It defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.*/
+}
+
+.box-1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-5 img{
+    width: 55vh;
+    height: 45vh;
+    margin-left: 225px;
+}
+
+.col-5{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+col-5 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.offer{
+    margin-top: 80px;
+    padding: 30px 0;
+    background: radial-gradient(#fff, #ffd6d6);/*The radial-gradient() function is an inbuilt function in CSS which is used to set a radial gradient as the background image. It starts at a single point and emanates outward. By default, the first color starts at the center position of the element and then fade to the end color towards the edge of the element.*/
+}
+
+.btn-1{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.btn-1:hover{
+    background: #563434;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+/*Styling newsletter div*/
+
+.newsletter{
+    background:linear-gradient(skyblue,skyblue), url(../pictures/deal.jpg) no-repeat;
+    /*Source: https://www.freepik.com/free-photo/copy-space-headphones-laptop-air-concept_10357395.htm#page=1&query=Headphones&position=38*/
+    background-blend-mode: multiply;/*This will mix the background picture and yellow layer together*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;/*The background-attachment CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.*/
+    padding:4rem 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.new h1{
+    color:#fff;
+    font-size: 4rem;
+}
+
+.get p{
+    color:#fff;
+    font-size: 2rem;
+    padding:1rem 0;
+    text-transform: capitalize;
+}
+
+.form-1{
+    height:5.5rem;
+    max-width: 60rem;/*The max-width property in CSS is used to define the maximum width of an element. The value of the width cannot be larger than the value by max-width. If the content is larger then the max-width then it will go to the next line and if the content is smaller then max-width then it has no effect.*/
+    margin:0 auto;
+    padding:0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    background:rgba(0,0,0,.3);
+}
+
+.newsletter form input[type="email"]{
+    height: 100%;
+    width: 80%;
+    padding:0 1rem;
+    outline: none;
+    border:none;
+    background:none;
+    font-size: 2rem;
+    color:#fff;
+    text-transform: capitalize;
+}
+
+.newsletter form input[type="submit"]{
+    border-radius: 5rem;
+}
+
+.btn-x{
+    width: 70px;
+}
+
+.btn-x:hover{
+    cursor: pointer;
+    color: ghostwhite;
+    background: black;
+    transition: all 0.4s;
+    opacity: 0.5;/*The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.*/
+}
+
+
+/*----------Styling homepage ends--------*/
+
+
+
+
+
+
+
+
+
+
+/*------------Styling Cart Page---------------*/
+.small-container{
+     margin: 150px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.th{
+    text-align: left;
+    color: #fff;
+    background: #64916e;
+    font-weight: normal;
+    font-size: 26px;
+}
+.td{
+    padding: 15px 10px;
+
+}
+
+input{
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+}
+
+td a{
+    color: #4875d6;
+    font-size: 20px;
+}
+
+td img{
+    width: 83px;
+    height: 83px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 145px;
+
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 270px;
+}
+
+/*---------------------Styling cart page ends------------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------------Styling Product Details page------------------------*/
+
+.small-container-2{
+    justify-content: space-between;
+}
+.col-6{
+    margin-top: 140px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.col-6 img{
+    width: 55vh;
+    height: 57vh;
+    margin-top: 13px;
+}
+
+col-6 h1{
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.box-2{
+    display:flex;
+}
+
+.small-container-2 select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.small-container-2 input{
+    width: 25px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus{
+    outline: none;
+}
+
+.small-img-row{
+    display: flex;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.small-img-row img{
+    width: 6.5vw;
+    height: 13vh;
+    
+}
+
+.small-img-col{
+    cursor: pointer;
+    flex-basis: 25%;
+}
+
+.product-content{
+    margin-top: 140px;
+    margin-left: 20px;
+    padding: 2rem 1rem;
+}
+
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-size: 50px;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+
+
+.product-link{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding:0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.product-link:hover{
+    opacity: 0.9;
+    color: #000;
+    text-decoration: none;
+}
+
+.product-rating{
+    color: #ffc107;
+}
+
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+
+.product-price{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.product-price span{
+    font-weight: 400;
+}
+
+.old-price span{
+    color: #f64749;
+    text-decoration: line-through;/*The CSS text-decoration property with a value line-through may be used similarly. The code... However, the strikethrough line is typically the same color as the text.*/
+}
+
+.new-price span{
+    color: #256eff;
+}
+
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+
+.product-detail p{
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
+
+.product-detail ul{
+    font-size: 1.7rem;
+    margin-right: 70px;
+
+}
+
+.product-detail ul li{
+    list-style: none;
+    font-weight: 600;
+}
+
+.product-detail ul li span{
+    font-weight: 400;
+}
+
+.purchase-info{
+    margin: 1.5rem 0;
+}
+
+.purchase-info input, .purchase-info select, .purchase-info .btn-2, .purchase-info .btn-0{
+    border: 1.5px solid #ddd;
+    border-radius: 22px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.purchase-info input{
+    width: 60px;
+}
+
+.purchase-info .btn-2{
+    cursor: pointer;
+    color: #fff;
+}
+
+.purchase-info .btn-0{
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.purchase-info .btn-0{
+    background: #256eff;
+}
+
+.purchase-info .btn-2{
+    background: #f64749;
+}
+
+.purchase-info .btn-2:hover{
+    opacity: 0.9;
+}
+
+.purchase-info .btn-0:hover{
+    opacity: 0.9;
+}
+
+.social-links-a{
+    display: flex;
+    align-items: center;
+
+}
+
+.social-links-a p{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.social-links-a i:hover{
+    color: white;
+
+}
+
+.social-links-a a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid white;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links-a a:hover{
+    background: whitesmoke;
+    border-color: transparent;
+    text-decoration: none;
+}
+/*-----------------------End of styling products detail page---------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------Gallery page--------------------------*/
+.btn-a.button-active{
+    height: 4rem;
+    width: 14rem;
+    color:black;
+    font-size: 2rem;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    margin-top: 200px;
+    background: gray;
+}
+
+.btn-a.button-active:hover{
+    letter-spacing: .2rem;
+    opacity: .8;
+    background:rgb(29, 86, 109);
+    color: black;
+    background: whitesmoke;
+}
+
+.head{
+    padding-top: 10rem;
+    width: 95%;
+    border-bottom: 0.2rem solid rgba(0,0,0,.3);
+    margin:0 auto;
+}
+
+.head p{
+    font-size: 2rem;
+    padding:1rem 6rem;
+    color:#fff;
+    background:rgb(105, 105, 199);
+    border-top-right-radius: 3rem;
+    display: inline-block;
+}
+
+.gallery{
+    min-height: 100vh;
+}
+
+.gallery .image-container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container-1 .box-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    flex:1 1 30rem;
+}
+
+.gallery .image-container-1 .box-a .image-1{
+    height:12rem;
+    width: 20rem;
+    text-align: center;
+    padding:1rem;
+    background: #f0f0f0;
+}
+
+.gallery .image-container-1 .box-a .image-1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .image-container-1 .box-a:hover .image-1{
+    background:#ccc;
+}
+
+.gallery .image-container-1 .box-a .info{
+    width: 100%;
+}
+
+.gallery .image-container-1 .box-a .info h3{
+    font-size: 2rem;
+    color:var(--blue);
+    padding:1rem;
+}
+
+.gallery .image-container-1 .box-a .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: .1rem solid rgba(0,0,0,.3);
+    padding:1rem;
+}
+
+.gallery .image-container-1 .box-a .info .subInfo .price{
+    color:#ff3300;
+    font-size: 2rem;
+}
+
+.gallery .image-container-1 .box-a .info .subInfo .stars i{
+    color:orange;
+    font-size: 1.5rem;
+}
+/*--------------End of styling gallery page--------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------------Styling of footer-------------------------*/
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.3);
+
+}
+.social-links{
+    display: flex;
+    align-items: center;
+
+}
+
+.social-links p{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid black;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: black;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+.footer-bg{
+    background:linear-gradient(skyblue,skyblue), url(../pictures/footer-bg.jpg) no-repeat;
+    /*Source: https://www.freepik.com/free-photo/music-arrangement-with-black-headphones-with-copy-space_11434152.htm*/
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:2rem;
+
+}
+
+.footer .box-container .box .logo{
+    font-size: 2.5rem;
+    color:whitesmoke;
+    display: block;
+}
+
+.footer .box-container .box i{
+    color:blue;
+}
+
+.footer .box-container .box p{
+    font-size: 1.7rem;
+    padding:1rem 0;
+    color:white;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:white;
+}
+
+
+.footer .credit{
+    text-align: center;
+    width: 100%;
+    margin:0 auto;
+    padding:1.4rem 0;
+    border-top: .1rem solid rgba(0,0,0,.3);
+    color:ghostwhite;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    background: rgba(0,0,0,0.3);
+
+}
+
+.footer .credit span{
+    color:var(--blue);/*CSS Variables - The var() Function
+    The var() function is used to insert the value of a CSS variable. ... A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.*/
+}
+/*--------------------End of styling footer-------------*/
+
+
+
+
+
+
+
+/*--------------------Styling of category pages------------------------*/
+
+.arrival{
+    min-height: 100vh;
+}
+
+.arrival .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    width: 85%;
+    margin:0 auto;
+}
+
+.arrival .box-container .box{
+    flex:1 1 20rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+    margin:1rem 2rem;
+    margin-top: 100px;
+}
+
+.arrival .box-container .box .image{
+    height: 20rem;
+    padding:2rem;
+    text-align: center;
+    background:#f0f0f0;
+}
+
+.arrival .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrival .box-container .box .info h3{
+    padding:1rem;
+    font-size: 2rem;
+    color:var(--blue);
+}
+
+.arrival .box-container .box .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
+}
+
+.arrival .box-container .box .info .subInfo .price{
+    color:#ff3300;
+    font-size: 2rem;
+}
+
+.arrival .box-container .box .info .subInfo .price span{
+    color:#666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.arrival .box-container .box .info .subInfo .stars i{
+    color:orange;
+    font-size: 1.5rem;
+}
+
+.arrival .box-container .box .overlay{
+    position: absolute;
+    top:0; left: 0;
+    height:20rem;
+    width: 100%;
+    background:rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.arrival .box-container .box:hover .overlay{
+    transform: scale(1);
+    text-decoration: none;
+}
+
+.arrival .box-container .box .overlay a{
+    font-size: 2rem;
+    padding:1.5rem 2rem;
+    background:#fff;
+    color:#666;
+    margin:1rem;
+    transform: translateY(-15rem);
+    transition-delay: calc(.1s * var(--i));/*The transition-delay CSS property specifies the duration to wait before starting a property's transition effect when its value changes.*/
+}
+
+.arrival .box-container .box:hover .overlay a{
+    transform: translateY(0rem);
+}
+
+.arrival .box-container .box .overlay a:hover{
+    color:var(--blue);
+}
+/*----------------------End of styling category pages-----------------------------*/
+
+
+
+
+
+
+
+
+/*------------------Styling of Login page------------------------*/
+
+.form-box{
+    width: 30vw;
+    height: 300px;
+    background: #fff;
+    float: right;
+    margin-right: 400px;
+    margin-top: 100px;
+    box-shadow: 0 0 10px 2px #ff523b;
+    border-radius: 20px;
+    position: relative;
+    padding: 2vh 5vw;
+}
+
+
+
+.parallax-1{
+    background-image: url(../pictures/img.jpg);
+    /*Source: https://www.freepik.com/free-photo/cheerful-shopping-woman-with-bags_3272392.htm*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 100vw;
+    margin-top: 75px;
+    
+}
+
+.button-box{
+    width: 100%;
+    margin: 5px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    width:49%;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#butn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    transition: 0.5s;
+}
+
+.inputgroup{
+    width: 100%;
+    transition: 0.5s;
+    margin: 40px auto;
+}
+
+.inputfield{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.checkbox{
+    width: 14px;
+    height: 14px;
+}
+
+.submitbtn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+/*End of styling login page*/
